@@ -1,0 +1,36 @@
+.cvBody {
+    width: 900px;
+    margin: auto;
+}
+
+.cv {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
+
+.item {
+    margin: 30px 15px 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 2px 5px 6px 0px rgb(194 196 197);
+    background-position: center;
+    color: #222222;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    padding: 60px 10px;
+    width: 180px;
+    height: 180px;
+    background-image: url(../poto/cvImg.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}

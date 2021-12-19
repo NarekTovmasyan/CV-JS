@@ -1,0 +1,77 @@
+.secondPage {
+    width: 800px;
+    margin: auto;
+    background-color: #595959;
+    opacity: 0.9;
+}
+
+.cvSecondPage {
+    border: 1px solid grey
+}
+
+.header {
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-auto-rows: minmax(200px, 200px);
+    border-bottom: groove;
+    background-color: #2e2d2d;
+}
+
+.personName {
+    color: #B1AFAF;
+    font-family: monospace;
+}
+
+.personImg {
+    grid-column-start: 3;
+}
+
+.personImg>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.infoBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info {
+    display: grid;
+    color: #3E3D3D;
+    font-family: monospace;
+    padding-left: 50px;
+    border-bottom: inset;
+    padding: 20px;
+}
+
+.infoText {
+    margin: 1px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+.infoHeader,
+.infoWork {
+    font-weight: 700;
+    color: rgb(46, 22, 185);
+    font-size: 25px;
+}
+
+.infoSubHeader {
+    font: small-caption;
+}
+
+.subHeader {
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.infoSubText {
+    font-style: italic;
+}

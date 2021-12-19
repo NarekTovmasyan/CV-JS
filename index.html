@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="fileCss/headerCv.css">
+    <link rel="stylesheet" href="fileCss/linkButon.css">
+    <link rel="stylesheet" href="fileCss/contactUs.css">
+    <link rel="stylesheet" href="fileCss/media.css">
+    <link rel="stylesheet" href="fileCss/grid.css">
+    <link rel="stylesheet" href="fileCss/gridImg.css">
+    <link rel="stylesheet" href="fileCss/secondPage.css">
+    <link rel="stylesheet" href="fileCss/about.css">
+    <link rel="stylesheet" href="fileCss/addNewPerson.css">
+</head>
+
+<body>
+    <header>
+        <p>1-2-3 <span>Web-Design</span></p>
+        <span class="dropDown">
+        <button class="dropBtn">SEE MORE</button>
+        <span class="dropDown-content">
+          <ul>
+            <li class="linkHome"><a href="./index.html">home</a></li>
+            <li class="linkCVPage"><a href="#cvPage">CV Page</a></li>
+            <li class="linkLogIn"><a href="#contactUs">Contact Us</a></li>
+            <li class="linkAbout"><a href="#about">About</a></li>
+          </ul>
+        </span>
+        </span>
+    </header>
+    <div class="homeBody">
+        <div class="user hidden" id="contact-us-page">
+            <h1>Contact Us</h1><br>
+            <form>
+                <label for="fname">Name</label><br />
+                <input class="name" type="text" id="fname" name="fname" placeholder="Enter your name" /><br />
+                <label for="email">Email Address</label><br />
+                <input class="name" type="email" id="email" name="email" placeholder="Enter your mail" /><br />
+                <label for="Message">Message</label><br />
+                <textarea class="name message" id="Message" placeholder="Your message..." name="Message"></textarea><br /><br />
+                <input class="submit message" type="submit" value="Send" />
+            </form>
+        </div>
+        <div class="cvBody">
+            <div class="cv hidden" id="cv-list">
+
+            </div>
+            <div class="box hidden" id="cv-page">
+                <div class="secondPage cvSecondPage">
+                    <div class="header">
+                        <div class="personName">
+                            <div class="name">
+                                <h1 class="secondPageName"></h1>
+                            </div>
+                            <div class="contact">
+                                <p class="phone"><label for="">Phone:</label><span></span></p>
+                                <p class="email"><label for="">Email:</label><span></span></p>
+                            </div>
+                        </div>
+                        <div class="personImg"><img id="personImg" src="" alt="img"></div>
+                    </div>
+                    <div class="infoBox">
+                        <div class="info">
+                            <div class="info">
+                                <h3 class="infoHeader"></h3>
+                            </div>
+                            <div class="info">
+                                <h3 class="infoWork"></h3>
+                            </div>
+                            <div class="info">
+                                <h3 class="infoHeader">Trainings</h3>
+                                <div class="infoText" id="education1">
+                                    <div class="infoSubHeader">
+                                        <p class="subHeader trainings0"></p>
+                                        <p class="infoDate trainingsDate0"></p>
+                                    </div>
+                                    <div class="infoSubText">
+                                        <p class="trainingName"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="about hidden" id="about-page">
+            <div class="aboutContainer">
+                <h1 class="aboutHeader">Ինքնակենսագրականների դիտարկման կայք</h1>
+                <div class="aboutTextBlock">
+                    <div class="aboutText">
+                        Կայքը իրենից ներկայացնում է կազմակերպության կադրերի բազայում հավաքագրված տվյալների դիտարկման Web էջ, որը հնարավորություն է տալիս արագ դիտարկել առկա կադրերի ինքնակենսագրականները։
+                        <br>
+                        <br>
+                        <h2 class="aboutSubHeader">Single-Page վեբ հավելվածի ստեղծման նկարագրություն</h2>
+                        Կայքի ստեղծման համար օգտագործվել է <span class="textSpan">HTML, CSS, JavaScript </span>բազային գիտելիքներ։ HTML-ի մեջ օգտագործվել է հիմնականում <span class="textSpan">div</span>> թեգը։ Ունենք <span class="textSpan">հeader</span>,
+                        որի վրա՝ մեր կայքում տեղաշարժվելու համար, օգտագործել ենք <span class="textSpan">a</span> թեգը, օգտվել ենք <span class="textSpan">img</span> թեգից, ինչպես նաև <span class="textSpan">input</span>-ի գաղափար ենք օգտագործել՝ մեր օգտատիրոջը
+                        հետագայում հասանելիություն տալու համար։ CSS-ի մասով առաջնային խնդիրը լուծել ենք <span class="textSpan">Grid styl</span>-ի միջոցով՝ ստեղծելով մեր ինքնակենսագրականների կաղապարը, մնացած ոչ պակաս կարևոր գործիքներով փորձել ենք մեր կայքին
+                        տալ գեղեցիկ արտաքին տեսք։ JavaScript-ի միջոցով մեր կայքին տվել ենք ճկունություն, նրա աշխատանքը ավելի մանրամասն կներկայացնեմ կայքի բեռնվելուց հետո կատարվող գործողություններում։ Կայքի էջը բեռնվելուց բացվում է կադրերի ցանկի նախադիտարկման
+                        էջը։ Ստեղծված են person object-ներ։ Օբյեկտը ունի անձնական տվյալների համար համապատասխան property-ները, որոնք պահված են զանգվածում։ Սկզբնական էջում person-ների ցուցակը կազմակերպվում է ցիկլով, որի համար օգտագործվել է զանգվածի
+                        <span class="textSpan">forEach</span> մեթոդը։ Յուրաքանչյուր բլոկին click անելիս էջի urlը փոխվում է window.location.hash-ով (օրինակ, <span class="textSpan">/#home?id=1</span>, որտեղ id-ն person id-ն է, ում անձնական էջը ցանկանում
+                        ենք տեսնել) Յուրաքանչյուր User ունի իր առանձին ինքնակենսագարականի էջ, որը հիմնական էջի հետ բեռնվում է առանձին բլոկի մեջ, բայց տեսանելիության հատկության շնորհիվ չի երևում։ Այդ գործողությունը իրականացված է ինքնակենսագարականի բլոկի
+                        <span class="textSpan">display</span> պարամետրով։
+                        <span class="textSpan">Hashchange event</span> -ի օգնությամբ ստուգվում է <span class="textSpan">url</span> -ը, և url- ից կախված այդ նույն էջում ցույց է տրվում նախապես ստեղծած ինքնակենսագրականի բլոկը, փոխարենը թաքցվում է ամբողջ
+                        person -ների gridը:
+                        <span class="textSpan">DOM</span> -ի հրամանների օգնությամբ person օբյեկտի data-ն տեղադրվում է ինքնակենսագրականի բլոկի համապատասխան տեղերում:
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="add-new hidden" id="add-new">
+
+        <!-- <form enctype="multipart/form-data" method="post">
+            <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                <input type="submit" value="uxarkel" name="qashel"></p>
+        </form> -->
+        <span id="add-new-photo"><a href="">+add Your photo</a></span>
+        <span><h1 class="h1Text">new cv page</h1></span>
+        <form class="new-members" id="new-members">
+            <div class="divInput">
+                <label for="name-field">First Name</label><br>
+                <input class="inputText" type="text" id="name-field" placeholder="Please Enter First Name" name="firstName" required="" /><br>
+                <label for="lastName-field">Last Name</label><br>
+                <input class="inputText" type="text" id="lastName-field" placeholder="Please Enter Last Name" name="lastName" required/><br>
+                <label for="phone-field">Phone</label><br>
+                <input class="inputText" type="phone" name="phone" id="phone-field" placeholder="+374-00-00-00-00" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required><br>
+                <label for="email-field">Email</label><br>
+                <input class="inputText" type="email" id="email-field" name="email" placeholder="Please Enter Your Email" required><br>
+                <label for="education-field">Education</label><br>
+                <input class="inputText" type="text" name="education" id="education-field"><br>
+                <label for="work-field">Work Experience</label><br>
+                <input class="inputText" type="text" name="workExperience" id="work-field"><br>
+                <label for="trainings-field">Trainings</label><br>
+                <input class="inputText" type="text" name="trainings" id="trainings-field"><br><br>
+                <button class="inputTextButton" type="submit" value="submit" id="submit-button">ADD NEW PERSON</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="fileJS/headerCv.js"></script>
+</body>
+
+</html>

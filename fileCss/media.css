@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    #menu-bar {
+        display: block;
+    }
+    ul {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .form {
+        width: 90%;
+    }
+}

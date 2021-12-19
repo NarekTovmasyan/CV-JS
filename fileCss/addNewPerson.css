@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add-new {
+    background-image: url(../poto/cvImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
+    opacity: 0.8;
+    margin: -35px auto;
+    font-size: larger;
+    font-family: sans-serif;
+    color: black;
+}
+
+.add-new:hover {
+    opacity: 1.0;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+#add-new-photo {
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+.h1Text {
+    text-align: center;
+    color: #f0c585;
+    text-transform: capitalize;
+}
+
+.new-members {
+    margin: auto;
+    width: 50%;
+}
+
+.divInput {
+    text-align: center;
+    margin: 10px 0px 10px;
+    width: 100%;
+}
+
+.inputText {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.inputText:hover {
+    opacity: 1.0;
+    background-color: darkgrey;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.inputTextButton {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.inputTextButton:hover {
+    opacity: 1.0;
+    background-color: chartreuse;
+    color: darkblue;
+}
